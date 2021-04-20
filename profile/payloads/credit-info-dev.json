@@ -1,0 +1,11 @@
+{
+  "countryCode": "",
+  "companyId": 1,
+  "businessModelId": 1,
+  "personId": "c70f7c9f-9fa2-4a8f-8f39-c18eb2eb785a",
+  "roleId": 1,
+  "valueTypeId": 1,
+  "value": 100,
+  "additionalLimitPercent": 10,
+  "updatedAt": "2021-02-27T15:33:00.000Z"
+}
