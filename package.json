@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "description": "Teste de Api e Contrato",
   "scripts": {
-    "test": "NODE_ENV=http://localhost:3000 mocha specs/crud_test.js --reporter mochawesome",
     "dev": "NODE_ENV=https://gsp-profile-api-int.dev.naturacloud.com/globalsales/profile/v1 mocha test --reporter mochawesome",
     "qa": "NODE_ENV=https://gsp-profile-api-int.qa.naturacloud.com/globalsales/profile/v1 mocha test --reporter mochawesome",
-    "lint": "./node_modules/.bin/eslint '/Users/danilo.policarpo/dev/Api_test_js/specs/crud_test.js'"
+    "rhsso": "NODE_ENV=https://sso-auth-qa.naturacloud.com/auth/realms/Natura/protocol/openid-connect mocha test --reporter mochawesome"
   },
   "author": "Danilo Policarpo",
   "license": "ISC",
