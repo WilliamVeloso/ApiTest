@@ -1,6 +1,6 @@
 require('dotenv').config();
 const request = require('supertest');
-const usersDev = require('../usersDev.json');
+const usersDev = require('../credential/usersDev.json');
  
 const rhsso = process.env.RHSSO
 

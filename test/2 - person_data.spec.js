@@ -7,7 +7,6 @@ const Joi = require('joi');
 describe('Person data', () => { 
     it('acessando o person-data', async() => {
         const response = await personDataService.personData();
-        console.log(response.body);
         //Joi.assert(response.body, schema_users.schema_person_data, response.text)
         expect(response.status).equal(200);
      
