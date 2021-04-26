@@ -2,11 +2,11 @@ require('dotenv').config
 const request = require("supertest");
 const commercialInfoService = require("../services/commercial_info")
 
-const profile = process.env.PROFILE;
+const url = process.env.NODE_ENV;
 
 const paymentConditionTrue = async () => {
   let tokenRequest = await commercialInfoService.commercialInfo();
-  const response = await request(profile)
+  const response = await request(url)
   .get('/payment-condition?selectable=true')
   .set('Content-Type', 'application/json')
   .set('x-app-token', tokenRequest.body['x-app-token'])
@@ -16,7 +16,7 @@ const paymentConditionTrue = async () => {
 
 const paymentConditionfalse = async () => {
   let tokenRequest = await commercialInfoService.commercialInfo();
-  const response = await request(profile)
+  const response = await request(url)
   .get('/payment-condition?selectable=false')
   .set('Content-Type', 'application/json')
   .set('x-app-token', tokenRequest.body['x-app-token'])
