@@ -27,7 +27,7 @@ describe('Adicionando credito para as CN', () =>{
     
     it('fomart invalido', async()=>{
 
-        const response = await request(profile)
+        const response = await request(url)
         .post('/credit-info')
         .set('Content-Type', 'application/json')
         .send(credit)
